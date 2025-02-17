@@ -24,6 +24,8 @@ int main( void )
             printf( "%s", "Enter a number: " );
             scanf( "%d %s", &item, name);
             insert( &startPtr, item, name); // insert item in list
+            puts( "The list is:" );
+            printList( startPtr );
             printListR( startPtr );
             break;
          case 2: // delete an element
